@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#map{
+    width:100wh;
+    height:100%;
+}
+
+#text_container{
+    position: absolute;
+    z-index: 100;
+    font-size: 80px;
+    color: #4d4d4d;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 20%;
+    left: 8%;
+}
+
+.search_container{
+    position: absolute;
+    z-index: 100;
+    top: 30%;
+    left: 8%;
+    width: 400px;
+    height: 60px;
+    background-color: #4d4d4d;
+    border-radius: 30px;
+    display: flex;
+}
+.search_container > .search{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.search_container > .search > #zip-code{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+    
+}
+
+.search_container > .search > i{
+    color: white;
+    font-size: 20px;
+}
+
+.search_container > .search > #zip-code:focus{
+    outline: none;
+}
+
+.storeList-container{
+    width: 400px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    top: 40%;
+    left: 8%;
+    bottom: 5%;
+    border-radius: 15px;
+}
+
+.storeList-container > .store-list{
+    padding: 20px;
+    font-size: 18px;
+    color: #4d4d4d;
+}
+.store-list > .divider{
+    margin-top: 15px;
+}
+
+.store-container{
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+.store-container > .store-address{
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+
+.store-container > .store-number{
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
